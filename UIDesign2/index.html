@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.9em;
+      }
+      .container {
+        background-color: #242c2c;
+        width: 90%;
+        padding: 2em 1em 4em 1em;
+        margin: auto;
+      }
+      .header-1 {
+        text-align: center;
+        color: #fff;
+      }
+      .search {
+        text-align: center;
+        margin: 1.5em auto;
+        width: 35%;
+        padding: 0.8em;
+        display: grid;
+        grid-template-columns: 10% 90%;
+        justify-content: start;
+        background-color: #5d5d5d;
+        color: #f2f2f2;
+        border-radius: 5px;
+      }
+      .fa-search {
+        cursor: pointer;
+        justify-self: start;
+        margin: 0;
+      }
+      #search-input {
+        border: none;
+        color: #f2f2f2;
+        width: 90%;
+        outline: none;
+        background-color: #5d5d5d;
+      }
+      .search ::placeholder {
+        color: #f2f2f2;
+      }
+      .wrapper {
+        width: 80%;
+        margin: auto;
+        padding: 3em 3em 1em 3em;
+        border-radius: 5px;
+        color: #242c2c;
+        background-color: #fff;
+      }
+      h3 {
+        text-align: center;
+      }
+      .box-1 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
+      }
+      .box-1 div {
+        border: 1px solid #8c9494;
+        border-radius: 5px;
+        margin: 2em 0;
+        padding: 1em;
+        text-align: center;
+      }
+      .box-2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
+        justify-items: center;
+      }
+      .box-2 h4 {
+        margin-bottom: 1em;
+      }
+      .box-2 p {
+        line-height: 3ex;
+      }
+      .box-3 {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        padding-top: 2em;
+        background-color: #f0f0f0;
+        text-align: center;
+        border-radius: 5px;
+      }
+      button {
+        padding: 0.5em 1em;
+        margin-top: 2em;
+        margin-bottom: 2.5em;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        background-color: #242c2c;
+      }
+    </style>
+    <title>UIDesignDaily2</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="header-1">
+        What can we help you <br />
+        with
+      </h2>
+      <div class="search">
+        <div>
+          <i class="fa fa-search"><a href="#"></a></i>
+        </div>
+        <div>
+          <input id="search-input" type="text" placeholder="Find anything" />
+        </div>
+      </div>
+      <div class="wrapper">
+        <h3>Top questions</h3>
+        <div class="box-1">
+          <div>About Actions</div>
+          <div>Managing Packages</div>
+          <div>Authentication</div>
+          <div>Notifications</div>
+        </div>
+        <div class="box-2">
+          <div>
+            <h4>DOCUMENTATION</h4>
+            <p>Help</p>
+            <p>Enterprise Server</p>
+            <p>Desktop</p>
+          </div>
+          <div>
+            <h4>COMMUNITY</h4>
+            <p>Education</p>
+            <p>Atom</p>
+            <p>Forum</p>
+          </div>
+          <div>
+            <h4>NEWS</h4>
+            <p>Blog</p>
+            <p>Charging</p>
+            <p>Status</p>
+          </div>
+          <div>
+            <h4>LEARNING</h4>
+            <p>Lab</p>
+            <p>Guides</p>
+            <p>Resources</p>
+          </div>
+        </div>
+        <div class="box-3">
+          <h3>Cant find what you're looking for?</h3>
+          <button>Contact us</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
